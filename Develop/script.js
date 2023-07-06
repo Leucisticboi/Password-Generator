@@ -66,24 +66,3 @@ function getRandomCharacter() {
 function getRandomNumber() {
   return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
 }
-
-// Create event listener to display the set password length on selection slider
-const allRanges = document.querySelector(".range-wrap");
-allRanges.forEach(wrap => {
-  const range = wrap.querySelector("#length");
-  const bubble = wrap.querySelector(".bubble");
-
-  range.addEventListener("input", () => {
-    setBubble(range, bubble);
-  });
-  setBubble(range, bubble);
-});
-
-function setBubble(range, bubble) {
-  const val = range.value;
-  const min = range.min ? range.min : 0;
-  const max = range.max ? range.max : 100;
-  const newVal = Number(((val - min) * 100) / (max - min));
-  bubble.innerHTML = val;
-
-}

@@ -40,4 +40,4 @@ I didn't use everything that the author shared, but I was able to create the bas
 
 The second article is https://css-tricks.com/value-bubbles-for-range-inputs/
 
-This article helped me figure out how to display the password length value as the user adjusts the password's length.
+I didn't end up using the methods that it shared but I decided to include a link nonetheless.
