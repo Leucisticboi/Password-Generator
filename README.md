@@ -31,6 +31,12 @@ WHEN the password is generated
 
 THEN the password is either displayed in an alert or written to the page
 
+## Usage
+The site is pretty straightforward. Simply slide the length bar to adjust the length of your desired password. Then select which characters you would like the password to include and click the "Generate Password" button. Your randomized password will then display in the text box underneath "Generate a Password".
+
+## Installation
+N/A
+
 ## Resources Used
 For my password length selector, I found a couple of very helpful articles. 
 
@@ -41,3 +47,9 @@ I didn't use everything that the author shared, but I was able to create the bas
 The second article is https://css-tricks.com/value-bubbles-for-range-inputs/
 
 I didn't end up using the methods that it shared but I decided to include a link nonetheless.
+
+## Screenshot
+![Screenshot of finished project](./passwordGenerator.png)
+
+## Deployed Application Link
+https://leucisticboi.github.io/Password-Generator/

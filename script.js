@@ -17,6 +17,7 @@ function writePassword() {
   const lowercase = lowerCase.checked;
   var password = generatePassword(numbers, specialChar, uppercase, lowercase, length);
   var passwordText = document.querySelector("#password");
+  var passLength = document.querySelector("#charNum");
 
   passwordText.value = password;
 
