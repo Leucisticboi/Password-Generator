@@ -1,5 +1,6 @@
 // Assignment code here
 const passLength = document.querySelector("#length");
+console.log(passLength);
 const lowerCase = document.querySelector("#lowercase");
 const upperCase = document.querySelector("#uppercase");
 const numeric = document.querySelector("#numeric");
@@ -12,15 +13,13 @@ var generateBtn = document.querySelector("#generate");
 function writePassword() {
   const length = passLength.value;
   const numbers = numeric.checked;
-  const specialChar =  specialCharacters.checked;
+  const specialChar = specialCharacters.checked;
   const uppercase = upperCase.checked;
   const lowercase = lowerCase.checked;
   var password = generatePassword(numbers, specialChar, uppercase, lowercase, length);
   var passwordText = document.querySelector("#password");
-  var passLength = document.querySelector("#charNum");
 
-  passwordText.value = password;
-
+  passwordText.textContent = password;
 }
 
 // Add event listener to generate button
@@ -33,7 +32,6 @@ function generatePassword(number, symbol, uppercase, lowercase, length) {
   for (let i = 0; i < length; i++) {
     if (number) {
       generatedPassword += getRandomNumber();
-      console.log(generatedPassword);
     }
     if (symbol) {
       generatedPassword += getRandomCharacter();
@@ -46,7 +44,7 @@ function generatePassword(number, symbol, uppercase, lowercase, length) {
     }
   }
 
-  const finalPassword = generatedPassword.slice(0, length);
+  var finalPassword = generatedPassword.slice(0, length);
 
   return finalPassword;
 }
