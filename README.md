@@ -49,7 +49,7 @@ The second article is https://css-tricks.com/value-bubbles-for-range-inputs/
 I didn't end up using the methods that it shared but I decided to include a link nonetheless.
 
 ## Screenshot
-![Screenshot of finished project](./passwordGenerator.png)
+![Screenshot of finished project](./assets/images/passwordGenerator.png)
 
 ## Deployed Application Link
 https://leucisticboi.github.io/Password-Generator/
